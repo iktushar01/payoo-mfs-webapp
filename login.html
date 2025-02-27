@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="bg-slate-800">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-200">
+    <section class="max-w-lg min-h-screen mx-auto flex flex-col justify-center items-center p-6">
+      <header class="w-full flex flex-col items-center">
+        <div class="relative flex justify-center items-center w-full max-w-xs mb-10">
+          <img class="w-10 sm:w-12 absolute bottom-5" src="./resources/logo.png" alt="" />
+        </div>
+      </header>
+
+      <!-- Login Section -->
+      <div class="w-full flex justify-center">
+        <div class="card bg-base-100 w-full max-w-sm shadow-2xl rounded-3xl">
+          <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text text-neutral-950 font-semibold mb-2">Mobile Number</span>
+              </label>
+              <input
+                value="01756650014"
+                id="account_number"
+                type="number"
+                placeholder="Enter your number"
+                class="input input-bordered rounded-2xl"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text text-neutral-950 font-semibold mb-2">Enter Your Pin Number</span>
+              </label>
+              <input
+                value="1234"
+                id="account_password"
+                type="password"
+                placeholder="Enter 4 Digit Pin"
+                class="input input-bordered rounded-2xl"
+                required
+              />
+              <label class="label">
+                <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+              </label>
+            </div>
+            <div class="form-control mt-6 mx-auto w-full">
+              <button id="login_btn" class="btn btn-primary w-full">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script/login.js"></script>
+  </body>
+</html>
