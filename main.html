@@ -115,6 +115,38 @@
           </form>
         </div>
       </section>
+      <!-- Transfer Money Section -->
+      <section id="Transfer_money_section" class="px-4 mt-8">
+        <h2 class="text-blue-500 text-xl font-bold">Transfer Money</h2>
+        <div class="card bg-base-100 shadow-md rounded-lg p-4">
+          <form>
+            <label class="block">Bank Account Number</label>
+            <input type="number" id="user_number" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 11-digit account number" />
+
+            <label class="block mt-4">Amount to Withdraw</label>
+            <input type="number" id="out_amount" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter Amount" />
+
+            <label class="block mt-4">Enter Your Pin Number</label>
+            <input type="password" id="cash_out_pin" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 4-Digit Pin" />
+
+            <button id="out_money_btn" class="btn btn-primary w-full mt-4">Send Now</button>
+          </form>
+        </div>
+      </section>
+      <!-- Get Bonus section -->
+      <section id="get_bonus_section" class="px-4 mt-8">
+        <h2 class="text-blue-500 text-xl font-bold">Get Bonus</h2>
+        <div>
+          <img src="./resources/under_process.png" alt="">
+        </div>
+      </section>
+      <!--Pay bill section -->
+      <section id="pay_bill_section" class="px-4 mt-8">
+        <h2 class="text-blue-500 text-xl font-bold">Pay bill</h2>
+        <div>
+          <img src="./resources/under_process.png" alt="">
+        </div>
+      </section>
 
       <!-- Transaction Section -->
       <section id="transaction_section" class="px-4 mt-8">
@@ -123,8 +155,5 @@
       </section>
     </section>
 
-    <script src="./script/addMoney.js"></script>
-    <script src="./script/cashout.js"></script>
-    <script src="./script/transaction.js"></script>
   </body>
 </html>
