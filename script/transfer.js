@@ -1,8 +1,8 @@
-document.getElementById("out_money_btn").addEventListener("click", function(event){
+document.getElementById("tranfer_money_btn").addEventListener("click", function(event){
     event.preventDefault();
-    const amount = getInputValueById("out_amount");
-     const pin = getInputValueById("cash_out_pin");
-    const accountNumber = document.getElementById("user_number").value;
+    const amount = getInputValueById("tranfer_amount");
+     const pin = getInputValueById("tranfer_pin");
+    const accountNumber = document.getElementById("reciver_number").value;
     const mainBalance = getInnerTextById("main_balance");
 
     if (
