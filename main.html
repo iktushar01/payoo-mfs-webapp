@@ -36,7 +36,7 @@
         <nav class="flex justify-between items-center px-4 py-2 bg-white shadow-md">
           <img class="w-12" src="./resources/logo.png" alt="Logo" />
           <div>
-            <h1 class="text-xl font-bold">$<span id="main_balance">230</span></h1>
+            <h1 class="text-xl font-bold">$<span id="main_balance">69</span></h1>
             <p class="text-sm text-gray-500">Available Balance</p>
           </div>
           <button class="btn btn-sm btn-error">Log Out</button>
@@ -82,7 +82,7 @@
         <div class="card bg-base-100 shadow-md rounded-lg p-4">
           <form>
             <label class="block">Select Bank</label>
-            <select class="select select-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md">
+            <select id="select_bank" class="select select-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md">
               <option disabled selected>Pick Our bank</option>
               <option value="Bkash">Bkash</option>
               <option value="Nagad">Nagad</option>
@@ -90,13 +90,13 @@
             </select>
 
             <label class="block mt-4">Bank Account Number</label>
-            <input value="01756650014" type="number" id="account_number" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 11-digit account number" />
+            <input type="number" id="account_number" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 11-digit account number" />
 
             <label class="block mt-4">Amount to Add</label>
             <input type="number" id="amount" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter Amount" />
 
-            <label class="block mt-4">Enter Your Pin Number</label>
-            <input value="1234" type="password" id="account_password" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 4-Digit Pin" />
+            <label class="block mt-4">Enter Your Pin Number(1234)</label>
+            <input type="password" id="account_password" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 4-Digit Pin" />
 
             <button id="add_money_btn" class="btn btn-primary w-full mt-4">Add Money</button>
           </form>
@@ -109,13 +109,13 @@
         <div class="card bg-base-100 shadow-md rounded-lg p-4">
           <form>
             <label class="block">Bank Account Number</label>
-            <input value="01756650014" type="number" id="user_number" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 11-digit account number" />
+            <input type="number" id="user_number" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 11-digit account number" />
 
             <label class="block mt-4">Amount to Withdraw</label>
             <input type="number" id="out_amount" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter Amount" />
 
-            <label class="block mt-4">Enter Your Pin Number</label>
-            <input value="1234" type="password" id="cash_out_pin" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 4-Digit Pin" />
+            <label class="block mt-4">Enter Your Pin Number(1234)</label>
+            <input type="password" id="cash_out_pin" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 4-Digit Pin" />
 
             <button id="out_money_btn" class="btn btn-primary w-full mt-4">Withdraw Money</button>
           </form>
@@ -127,13 +127,13 @@
         <div class="card bg-base-100 shadow-md rounded-lg p-4">
           <form>
             <label class="block">Bank Account Number</label>
-            <input value="01759813186" type="number" id="reciver_number" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 11-digit account number" />
+            <input type="number" id="reciver_number" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 11-digit account number" />
 
-            <label class="block mt-4">Amount to Withdraw</label>
+            <label class="block mt-4">Amount to Transfer</label>
             <input type="number" id="tranfer_amount" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter Amount" />
 
-            <label class="block mt-4">Enter Your Pin Number</label>
-            <input value="1234" type="password" id="tranfer_pin" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 4-Digit Pin" />
+            <label class="block mt-4">Enter Your Pin Number(1234)</label>
+            <input type="password" id="tranfer_pin" class="input input-bordered w-full mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 shadow-md" placeholder="Enter 4-Digit Pin" />
 
             <button id="tranfer_money_btn" class="btn btn-primary w-full mt-4">Send Now</button>
           </form>

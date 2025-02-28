@@ -6,6 +6,17 @@ document.getElementById("tranfer_money_btn").addEventListener("click", function(
     const mainBalance = getInnerTextById("main_balance");
 
 
+    if(amount< 0 ){
+      alert("Please enter a valid amount")
+      return;
+    }
+
+  if(amount > mainBalance ) {
+    alert("Insufficient Balance!");
+    return;
+  }
+
+
     const transactionContainer = document.getElementById("transaction_container");
     const newTransaction = document.createElement("div");
     newTransaction.classList.add("flex", "items-center", "gap-3", "mt-2" , "mb-2");
@@ -36,6 +47,7 @@ document.getElementById("tranfer_money_btn").addEventListener("click", function(
       if (pin === 1234){
        const sum = mainBalance - amount;
        setInnerTextByIdAndValue("main_balance",sum);
+       alert("successful transfer your amount")
       }
       else{
         alert("Something is Wrong! Please Check Again!");

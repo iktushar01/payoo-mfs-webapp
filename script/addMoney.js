@@ -38,7 +38,14 @@ document.getElementById("add_money_btn").addEventListener("click", function(even
   const pin = getInputValueById("account_password");
   const accountNumber = document.getElementById("account_number").value;
   const mainBalance = getInnerTextById("main_balance");
+  const selectedBank = document.getElementById("select_bank").value;
+  console.log(selectedBank);
 
+  
+  if(amount < 0){
+    alert("Please enter a valid amount")
+    return;
+  }
 
 
   const transactionContainer = document.getElementById("transaction_container");
@@ -61,7 +68,8 @@ document.getElementById("add_money_btn").addEventListener("click", function(even
 
     transactionContainer.appendChild(newTransaction);
 
-  
+
+
     if (
     accountNumber.length === 11 &&
     accountNumber.slice(0, 2) === "01" &&
@@ -71,6 +79,7 @@ document.getElementById("add_money_btn").addEventListener("click", function(even
    const sum = amount + mainBalance;
    //document.getElementById("main_balance").innerText = sum;
    setInnerTextByIdAndValue("main_balance",sum);
+   alert("Successfully added your amount")
   }
   else{
     alert("Something is Wrong! Please Check Again!");

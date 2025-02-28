@@ -5,8 +5,15 @@ document.getElementById("out_money_btn").addEventListener("click", function(even
     const accountNumber = document.getElementById("user_number").value;
     const mainBalance = getInnerTextById("main_balance");
 
+    if(amount< 0 ){
+      alert("Please enter a valid amount")
+      return;
+    }
 
-
+  if(amount > mainBalance ) {
+    alert("Insufficient Balance!");
+    return;
+  }
 
 
     const transactionContainer = document.getElementById("transaction_container");
@@ -39,6 +46,7 @@ document.getElementById("out_money_btn").addEventListener("click", function(even
       if (pin === 1234){
        const sum = mainBalance - amount;
        setInnerTextByIdAndValue("main_balance",sum);
+       alert("successfully cash out your amount");
       }
       else{
         alert("Something is Wrong! Please Check Again!");
